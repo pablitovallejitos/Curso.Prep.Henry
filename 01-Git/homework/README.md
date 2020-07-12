@@ -36,7 +36,7 @@ Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, aña
   $ touch [nombre del archivo]
 ```
 
-"Remove": Elimina permanentemente un archivo. ¡CUIDADO! Esto traspasa cualquier "papelera de reciclaje" que exista en el sistema y elimina los archivos PERMANENTEMENTE. Como nota, esto no eliminará carpetas, necesitamos un comando especial para eso que aprenderemos más adelante.
+"Remove": Elimina permanentemente un archivo. ¡CUIDADO! Esto traspasa cualquier "papelera de reciclaje" que exista en el sistema y elimina los archivos PERMANENTEMENTE. Como nota, esto no eliminará carpetas, necesitamos un comando especial para eso que aprenderemos más adelante.cd..git status
 
 ```bash
   $ rm [nombre del archivo]
@@ -51,7 +51,8 @@ Iniciaremos creando una carpeta desde la consola llamada: "Henry"
 Para ello primero iremos a la carpeta de nivel superior, escribe en la consola:
 
 ```bash
-  cd ~
+  cd..
+
 ```
 
 y presiona Enter. Una vez estés en el nivel superior, escribe:
@@ -137,7 +138,7 @@ Para hacer esto, usaremos el comando "add":
 
 
 ```bash
-  git add archivo-ejemplo.js
+  git add archivo-ejemplo.jsgit commit
 ```
 
 Esto agregó nuestros cambios al historial. Ahora, para guardar el historial, usaremos el comando "commit". Commit agarrará todos nuestros cambios y los guardará en el historial de git. Para futuras referencias, podrás añadir un mensaje acerca de los cambios hechos, esto facilitará ir atrás en el historial y encontrar los cambios que vos (o cualquiera) busque en el futuro en caso de necesitarlo. Siempre es una buena idea hacer una descripción clara y concisa de los cambios. Un _shorthand_ para añadir un mensaje, es usar la bandera (flag) "-m" y escribir el mensaje a continuación usando comillas.
